@@ -1,0 +1,322 @@
+1
+00:00:00,240 --> 00:00:04,260
+Welcome to CREST. A group of users 
+can collaboratively search for and  
+
+2
+00:00:04,260 --> 00:00:06,120
+book a property to live in using CREST.
+
+3
+00:00:07,140 --> 00:00:10,140
+Ayala, Miguel and Nick will be using CREST 
+to find a place in New York for the summer.
+
+4
+00:00:11,460 --> 00:00:13,200
+CREST addresses several challenges
+
+5
+00:00:13,200 --> 00:00:17,520
+There are no tools that provide both 
+collaborative search and agreement support. So  
+
+6
+00:00:17,520 --> 00:00:20,040
+Ayala, Miguel and Nick will have to 
+use three or more different tools:  
+
+7
+00:00:20,040 --> 00:00:23,520
+Airbnb to search, chat and email to 
+share their findings and a google  
+
+8
+00:00:23,520 --> 00:00:27,660
+spreadsheet to keep track of their preferred 
+properties, budgets and terms and conditions.
+
+9
+00:00:27,660 --> 00:00:30,840
+Sometimes their efforts might feel 
+discontinuous and it is difficult  
+
+10
+00:00:30,840 --> 00:00:32,820
+to coordinate remotely and asynchronously.
+
+11
+00:00:33,840 --> 00:00:37,080
+Without a clear goal-oriented 
+process, team members can waste  
+
+12
+00:00:37,080 --> 00:00:40,500
+time exploring properties that might not 
+contribute to the overall team’s needs.
+
+13
+00:00:40,500 --> 00:00:42,360
+It is difficult, even among friends,  
+
+14
+00:00:42,360 --> 00:00:45,300
+to find ways to negotiate or work 
+around conflicting preferences.
+
+15
+00:00:45,900 --> 00:00:48,240
+Only one in the group can 
+effectively book for the team;  
+
+16
+00:00:48,240 --> 00:00:52,620
+stripping the other members of their ability 
+to explicitly agree or disagree to a property.
+
+17
+00:00:53,940 --> 00:00:57,960
+CREST and its friendly mediating now addresses 
+all of the aforementioned challenges.
+
+18
+00:00:57,960 --> 00:00:58,584
+Crests supports the main actions involved in group  
+
+19
+00:00:58,584 --> 00:00:59,220
+property-booking: search, 
+discussion and agreement.
+
+20
+00:00:59,220 --> 00:01:03,840
+Hi im Ayala and I'm from kazakhstan. I'm really 
+excited to be living with two of my best friends  
+
+21
+00:01:03,840 --> 00:01:08,160
+this summer in New York City. I'm a junior 
+architect studying the empire state building  
+
+22
+00:01:08,160 --> 00:01:12,960
+so I would need to be within walking distance of 
+it, but I can only afford 300 dollars per month.
+
+23
+00:01:13,920 --> 00:01:20,640
+Hi im Nick, i'm a linguistics graduate student 
+and I am enrolled in a coding intensive bootcamp  
+
+24
+00:01:20,640 --> 00:01:27,510
+this summer in New York City. All I need is a 
+place to stay during the night and sleep and I  
+
+25
+00:01:27,510 --> 00:01:35,040
+am a really good cook, so I can cook for rent, but 
+my monthly budget is only 150 dollars per month.
+
+26
+00:01:35,880 --> 00:01:42,420
+Hello I'm Miguel and I live in Mexico City. I 
+really care about shopping and living in style.  
+
+27
+00:01:42,420 --> 00:01:47,340
+For me the most important thing is to have my 
+own bathroom and a very, very clean kitchen.  
+
+28
+00:01:47,340 --> 00:01:52,440
+I've been saving up for this trip and I think I 
+can afford to spend around 600 dollars a month.
+
+29
+00:01:52,980 --> 00:01:57,900
+Miguel starts using CREST, sets his budget 
+to 600 dollars, and he then adds Wi-Fi,  
+
+30
+00:01:57,900 --> 00:01:59,700
+Kitchen, and Cable TV as preferences.
+
+31
+00:02:02,940 --> 00:02:05,400
+Ayala sets her budget to 300 
+dollars and adds being close  
+
+32
+00:02:05,400 --> 00:02:07,200
+to the Empire State Building as a preference.
+
+33
+00:02:08,520 --> 00:02:11,580
+Ayala explores the properties in the search 
+results lists by looking at some images.  
+
+34
+00:02:13,200 --> 00:02:16,440
+These properties can be sorted 
+by relevance, price, or ratings.
+
+35
+00:02:18,180 --> 00:02:23,040
+Users receive messages from CREST-Bot, our 
+automated mediation agent, in many places in the  
+
+36
+00:02:23,040 --> 00:02:27,900
+app, like the property item and the chat. These 
+carefully curated interventions derive inspiration  
+
+37
+00:02:27,900 --> 00:02:32,580
+from legal mediation literature and rely on data 
+collected from our Collabo-ratio visualisation,  
+
+38
+00:02:32,580 --> 00:02:39,060
+which tracks three key collaboration metrics: 
+activity, influence and communication. In fact,  
+
+39
+00:02:39,720 --> 00:02:43,080
+Ayala leverages a CREST-Bot message to 
+encourage Nick to participate in the task.
+
+40
+00:02:45,120 --> 00:02:46,920
+Ayala finds a nice property for the group that is  
+
+41
+00:02:46,920 --> 00:02:49,740
+close to the Empire State Building and 
+decides to propose a contract for it.
+
+42
+00:02:52,920 --> 00:02:57,360
+The contract contains the terms and conditions 
+of the team’s stay. Ayala leverages a CREST-Bot  
+
+43
+00:02:57,360 --> 00:03:01,380
+notification so that she and her team can reach 
+the desired budget. Once that takes effect,  
+
+44
+00:03:01,380 --> 00:03:04,560
+she proceeds to sign the contract and 
+sends a message to her group about it.
+
+45
+00:03:07,680 --> 00:03:11,160
+Nick sees Ayala mentioning him in 
+the chat and proceeds to add his  
+
+46
+00:03:11,160 --> 00:03:16,140
+preferences. He notices Ayala’s property 
+is a bit too pricy and proceeds to a near  
+
+47
+00:03:16,140 --> 00:03:19,200
+metro preference so that Ayala can take 
+the metro to the Empire State Building.
+
+48
+00:03:22,620 --> 00:03:26,640
+Nick uses this new metro preference to look 
+for a cheaper alternative and finds one  
+
+49
+00:03:26,640 --> 00:03:30,900
+thanks to a CREST-bot notification, which 
+he uses to propose a new contract for it.
+
+50
+00:03:31,740 --> 00:03:35,160
+Nick starts working on the contract by 
+also leveraging CREST-Bot interventions  
+
+51
+00:03:35,160 --> 00:03:38,820
+on matters of budget distribution and 
+house rules creation. Nick offers to  
+
+52
+00:03:38,820 --> 00:03:42,420
+cook for everyone in the team but notices a 
+CREST Bot notification saying that he should  
+
+53
+00:03:42,420 --> 00:03:46,440
+take out the apartment’s trash every week. 
+Since he is paying very little for rent,  
+
+54
+00:03:46,440 --> 00:03:51,060
+he accepts this recommendation. He signs the 
+contract and then updates the team in the chat.
+
+55
+00:03:53,940 --> 00:03:58,200
+Miguel logs in at some other time, and notices 
+several contracts proposed. He sees that  
+
+56
+00:03:58,200 --> 00:04:02,520
+Ayala’s contract is ranked very low and sees a 
+CREST-Bot notification saying that this contract  
+
+57
+00:04:02,520 --> 00:04:07,860
+doesn’t satisfy one of his preferences. He then 
+sees that the contract proposed by Nick is highly  
+
+58
+00:04:07,860 --> 00:04:12,060
+ranked and is even recommended through a CREST-Bot 
+notification, which he uses to open the contract.
+
+59
+00:04:12,060 --> 00:04:16,440
+Miguel likes this contract and likes the fact 
+that he is paying less than his original budget.  
+
+60
+00:04:16,440 --> 00:04:20,580
+He sees a CREST-Bot recommendation telling him 
+to create a house rule to justify him being the  
+
+61
+00:04:20,580 --> 00:04:24,780
+one paying the most for the team. He uses it to 
+make things better for him and signs the contract
+
+62
+00:04:28,680 --> 00:04:32,220
+Ayala sees that her original contract is 
+low in the ranked list and that two of  
+
+63
+00:04:32,220 --> 00:04:35,820
+her teammates have signed the contract for 
+a property near the metro. She also sees  
+
+64
+00:04:35,820 --> 00:04:39,540
+that CREST-bot is encouraging her to take 
+a look at this contract, so she opens it.  
+
+65
+00:04:41,340 --> 00:04:45,540
+She adds a few house rules to justify the daily 
+habit of taking the metro and signs the contract. 
+
+66
+00:04:54,540 --> 00:04:58,440
+Now that they all signed and agreed on a property, 
+the team can proceed to have fun in new york city.
+

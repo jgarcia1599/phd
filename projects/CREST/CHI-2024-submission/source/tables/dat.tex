@@ -1,0 +1,68 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{graphicx}
+\begin{table}[]
+\resizebox{0.55\textwidth}{!}{%
+\setlength{\tabcolsep}{0.1em}
+\begin{tabular}{@{}lllllllclllll@{}}
+%\toprule
+& 
+% & \rotatebox{90}{{Introspection }}
+% & \rotatebox{90}{{Search }}
+% & \rotatebox{90}{{Information Exchange}} 
+% & \rotatebox{90}{{Negotiation }}
+% & \rotatebox{90}{{Agreement }}
+% & \rotatebox{90}{{Disconnected Tooling}} 
+% & \rotatebox{90}{{Discontinuity }}
+% & \rotatebox{90}{{Shifting Goal Posts }}
+% & \rotatebox{90}{{Conflicts \& Stalemates}} 
+% & \rotatebox{90}{{Lack of Autonomy}} \\ 
+& \rotatebox{90}{{\tIntrospection}}
+& \rotatebox{90}{{\tSearch}}
+& \rotatebox{90}{{\tInformationExchange}} 
+& \rotatebox{90}{{\tNegotiation }}
+& \rotatebox{90}{{\tAgreement }}
+&
+& \rotatebox{90}{{\cDisconnectedTooling}} 
+& \rotatebox{90}{{\cDiscontinuity }}
+& \rotatebox{90}{{\cShiftingGoalPosts }}
+& \rotatebox{90}{{\cConfictsStalemates}} 
+& \rotatebox{90}{{\cLackOfAutonomy}} \\ 
+%\midrule
+ \multicolumn{2}{l}{Design Principles}
+ & \multicolumn{5}{c}{Tasks} 
+ & \quad\quad
+ & \multicolumn{5}{c}{Challenges} \\
+
+ %\multicolumn{2}{l}{} &&&&&&&&\\
+ & \textit{Features} 
+ & \multicolumn{5}{c}{} 
+ &
+ & \multicolumn{5}{c}{} \\
+ 
+\toprule
+
+\multicolumn{2}{l}{\pGoalCenteredFlow\vspace{0.05cm}} &  &  &  &  &  &  &  &  &  & & \\
+
+
+ & \textit{Unified System} & \demoyes & \demoyes & \demoyes & \demoyes & \demoyes & & \demoyes &  &  &  &  \\
+ & \textit{Contract} &  &  &  & \demoyes & \demoyes & &  &  & \demoyes & \demoyes &  \\
+ & \textit{Signature} \vspace{0.2cm} &  &  &  &  & \demoyes & & &  &  &  & \demoyes \\
+
+\multicolumn{2}{l}{\pAwareness\vspace{0.05cm}} &  &  & &  &  &  &  &  &  &  &  \\
+ & \textit{Collaborative Query Panel} & \demoyes & \demoyes & \demoyes &  &  & & \demoyes & \demoyes &  &  &  \\
+ & \textit{Collabo-ratio} &  &  &  & \demoyes &  & &  & \demoyes &  &  & \demoyes \\
+ & \textit{Active Contracts} &  &  & \demoyes &  & &  &  & \demoyes &  &  &  \\
+ & \textit{House Rules}  &  &  & \demoyes & \demoyes & \demoyes & &  & \demoyes &  & \demoyes & \demoyes \\
+ &\textit{Monetary Contributions Vis.} \vspace{0.2cm} &  &  & \demoyes &  &  & &  & \demoyes &  &  & \demoyes \\
+
+\multicolumn{2}{l}{\pMediation\vspace{0.05cm}} &  &  &  &  &  &  &  &  &  &  & \\
+ & \textit{\cbot} \vspace{0.1cm} &  & \demoyes & \demoyes & \demoyes & \demoyes & & &  & \demoyes & \demoyes & \demoyes \\
+
+\bottomrule
+\end{tabular}%
+}
+\vspace{0.2cm}
+\caption{ The relationships between \tool's design principles and features and the collaborative booking tasks and challenges.}
+\label{tab:design-analysis}
+\end{table}

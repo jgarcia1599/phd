@@ -1,0 +1,245 @@
+\usepackage{xspace}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{booktabs, ragged2e}
+\usepackage{graphicx}
+\usepackage{minted}
+\usepackage{amsmath}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{soul}
+\usepackage{tcolorbox}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{sparklines}
+
+\sloppy 
+
+\newcommand\diff{\mathop{}\!\mathrm{d}}
+
+\graphicspath{ {./images/} }
+
+
+% \copyrightyear{2022}
+% \acmYear{2022}
+% \setcopyright{acmcopyright}\acmConference[CHI '23]{TODO}{\textbf{October 10--14, 2021}}{xxxx, xxxx}
+% \acmBooktitle{TODO}
+% \acmPrice{15.00}
+% \acmDOI{10.1145/3472749.3474794}
+% \acmISBN{978-1-4503-8635-7/21/10}
+
+\renewcommand{\shortauthors}{Anon.}
+
+
+\newcommand{\tool}{\textsf{CREST}\xspace}
+\newcommand{\baseline}{\textsf{\emph{Baseline}}\xspace}
+
+\newcommand{\userA}{Liz\xspace}
+\newcommand{\userB}{Ben\xspace}
+\newcommand{\userC}{Amelia\xspace}
+
+\newcommand{\searchPage}{Search Page\xspace}
+\newcommand{\contractsPage}{Contracts Page\xspace}
+\newcommand{\contractPage}{Contract Page\xspace}
+\newcommand{\crestBot}{\cbot}
+\newcommand{\cbot}{\textsf{\tool-bot}\xspace}
+\newcommand{\collaboRatio}{\textsf{Collabo-ratio}\xspace}
+\newcommand{\collabQueryPanel}{\textsf{Collaborative Query Panel}\xspace}
+\newcommand{\houseRules}{House Rules\xspace}
+\newcommand{\monetaryContrib}{Monetary Contributions\xspace}
+
+\definecolor{sparkspikecolor}{rgb}{0.015, 0.39, 0.027}
+\definecolor{sparkrectanglecolor}{rgb}{0.9, 0.95, 0.9}
+%\setlength\sparklineheight{2ex}
+
+\definecolor{corn}{rgb}{0.398, 0.855, 0.929} %buttons
+\newtcbox{\buttonbox}{
+    nobeforeafter,colframe=corn!90!white,colback=corn!20!white,
+    boxrule=0.2pt,arc=1pt,
+    boxsep=0pt,left=2pt,right=2pt,top=1pt,bottom=1pt,
+    tcbox raise base}
+\newcommand{\button}[1]{
+    \buttonbox{{\sf\small #1}}\xspace
+}
+
+
+\definecolor{demoyes}{rgb}{0, 0.4, 0}
+\newcommand{\demoyes}{{\color{demoyes}{\huge$\bullet$}}}
+
+% crest bot messages
+
+% This property is in the top 1% of cheapest properties available! $propose_or_sign(property_id|button label)$
+\newcommand{\cbMessageCheapest}{\emph{1\xspace}}
+
+% This property is in the top 1% of highest-rated properties available! $propose_or_sign(property_id|button label)$?
+\newcommand{\cbMessageHighestRated}{\emph{2\xspace}}
+
+% This property satisfies most of your preferences! $propose_or_sign(property_id|button label)$?
+\newcommand{\cbMessageMostSatisfaction}{\emph{3\xspace}}
+
+% Hi @mostActiveUserName, you are your team's most active team member! Why don’t you $create_message(@leastActiveUserName, tell us a bit more what you would like!|ask @leastActiveUserName what they want for their dream property.)$ ?
+\newcommand{\cbMessageMostActive}{\emph{4\xspace}}
+
+ % Hi @leastActiveUserName, you seem to be one of your team's least active team members! Why don’t you $create_message(Hi guys, I would like the following for my property....|ask your team)$ what you are looking for.
+\newcommand{\cbMessageLeastActive}{\emph{5\xspace}}
+
+% The property in this contract satisfies 100% of the team's preferences ! $sign_contract(${contract_id})$
+% \newcommand{\cbMessageCommonGround}{\emph{6\xspace}}
+
+% You are contributing so much to your team ; get your fair do's: $create_house_rule( house rule example |contract_id)$`;
+\newcommand{\cbMessageMostContribution}{\emph{7\xspace}}
+
+% It is ok if you are paying the least, especially if you : $create_house_rule( house rule text | contract_id)$`
+\newcommand{\cbMessageLeastContribution}{\emph{8\xspace}}
+
+% This property doesn't satisfy your preference: $preference_pill(tag_id)$.  Here is one that does   : $show_property_item(${property_id})$
+% \newcommand{\cbMessageExploreAlternatives}{\emph{9\xspace}}
+
+% Your team has contributed more than necessary. Why pay more ? : $reallocate_contributions(contract_id)$
+\newcommand{\cbMessageReallocatedMore}{\emph{10\xspace}}
+
+% Not enough contributions to pay for this property  : $reallocate_contributions(contract_id)$
+\newcommand{\cbMessageReallocatedLess}{\emph{11\xspace}}
+
+% "Hello there! This is a reminder that you are currently part of a CREST collaborative search task. Here are some words of motivation regarding your team's search activity. 
+% Contracts Created contractsCreatedToday . Make sure you contribute your opinion on the contracts that have been created and see if any of them strike your fancy 
+% Messages Created Today messagesSentToday. Your team has been quite chatty today . Remember to voice your opinion on what you would your dream property to have!
+% Remember to log in to the CREST tool! The key to good collaboration is continued commitment from all parties. As such, log in to our tool and search your way to the property of your dreams ."
+\newcommand{\cbMessageEmailMessage}{\emph{12\xspace}}
+
+\definecolor{blu}{rgb}{0.220, 0.424, 0.69} %tasks
+\definecolor{org}{rgb}{0.992, 0.753, 0.525} %chl
+\definecolor{vio}{rgb}{0.745, 0.682, 0.831} %prinicples
+
+\newcommand{\fiveBucketsHistogram}[5]{%
+    \raisebox{-0.4ex}{
+      \scalebox{1.3}{%
+      \begin{sparkline}{5}
+        %\definecolor{sparkspikecolor}{rgb}{0.2,0.2,0.9}
+        \setlength\sparkspikewidth{3.5pt}
+        \sparkrectangle 0 1
+        \sparkspike  0.1  #1
+        \sparkspike  0.3  #2
+        \sparkspike  0.5  #3
+        \sparkspike  0.7  #4
+        \sparkspike  0.9  #5
+        %\sparkbottomlinex 0.15 .817
+      \end{sparkline}%
+      }
+    }
+}
+
+\newtcbox{\chlsbox}{
+    nobeforeafter,colframe=org!90!white,colback=org!20!white,
+    boxrule=0.2pt,arc=1pt,
+    boxsep=0pt,left=2pt,right=2pt,top=1pt,bottom=1pt,
+    tcbox raise base}
+
+\newtcbox{\prbox}{
+    nobeforeafter,colframe=vio!90!white,colback=vio!20!white,
+    boxrule=0.2pt,arc=1pt,
+    boxsep=0pt,left=2pt,right=2pt,top=1pt,bottom=1pt,
+    tcbox raise base}
+
+\newtcbox{\taskbox}{
+    nobeforeafter,colframe=blu!90!white,colback=blu!20!white,
+    boxrule=0.2pt,arc=1pt,
+    boxsep=0pt,left=2pt,right=2pt,top=1pt,bottom=1pt,
+    tcbox raise base}
+\newcommand{\challenge}[1]{
+    \chlsbox{{\fontfamily{cmss}\selectfont
+                \small #1}}\xspace
+}
+
+\newcommand{\task}[1]{
+    \taskbox{{\fontfamily{cmss}\selectfont
+                \small #1}}\xspace
+}
+
+\newcommand{\principle}[1]{
+    \prbox{{\fontfamily{cmss}\selectfont
+                \small #1}}\xspace
+}
+
+% tasks 
+\newcommand{\tIntrospection}{\hypertarget{tskx}{\task{t1. Introspection}}}
+\newcommand{\tSearch}{\hypertarget{tskx}{\task{t2. Search}}}
+\newcommand{\tInformationExchange}{\hypertarget{tskx}{\task{t3. Information Exchange}}}
+\newcommand{\tNegotiation}{\hypertarget{tskx}{\task{t4. Negotiation}}}
+\newcommand{\tAgreement}{\hypertarget{tskx}{\task{t5. Agreement}}}
+
+% challenges
+\newcommand{\cDisconnectedTooling}{\hypertarget{chx}{\challenge{c1. Disconnected Tooling}}}
+\newcommand{\cDiscontinuity}{\hypertarget{chx}{\challenge{c2. Discontinuity}}}
+\newcommand{\cShiftingGoalPosts}{\hypertarget{chx}{\challenge{c3. Shifting Goal Posts}}}
+\newcommand{\cConfictsStalemates}{\hypertarget{chx}{\challenge{c4. Conflicts \& Stalemates}}}
+\newcommand{\cLackOfAutonomy}{\hypertarget{chx}{\challenge{c5. Lack of Autonomy}}}
+
+
+% design principles
+\newcommand{\pGoalCenteredFlow}{\hypertarget{prx}{\principle{p1. Goal-Centered Flow}}}
+\newcommand{\pAwareness}{\hypertarget{prx}{\principle{p2. Awareness}}}
+\newcommand{\pMediation}{\hypertarget{prx}{\principle{p3. Mediation, not Arbitration.}}}
+
+% \newcommand{\prAwareness}{\hypertarget{prx}{\principle{px. awareness}}}
+% \newcommand{\prDivisionOfLabour}{\hypertarget{prx}{\principle{px. division of labour}}}
+% \newcommand{\prPersistence}{\hypertarget{prx}{\principle{px. persistence}}}
+
+\newcommand{\ch}{\hypertarget{chx}{\challenge{cx. }}}
+\newcommand{\tk}{\hypertarget{tskx}{\task{tx. }}}
+
+\definecolor{color1}{HTML}{678CB3}
+\definecolor{color1_brighter}{HTML}{dfe6e9}
+
+\usepackage{siunitx}
+\newcommand\percentage[2][round-precision=0]{
+    \SI[round-mode = places, scientific-notation = fixed, fixed-exponent = 0, output-decimal-marker={.}, #1]{#2e2}{\percent}%
+}
+
+\newlength\MAX
+\newcommand*{\PercBar}[2]{%
+    \setlength\MAX{#2}%
+    \percentage{#1}~\raisebox{-0.3ex}{\rlap{\textcolor{color1_brighter}{\rule{\MAX}{2ex}}}\color{color1}\rule{#1\MAX}{2ex}}%
+}
+
+\renewenvironment{quote} {
+  \noindent
+  \topsep=0pt
+  \parskip=0pt
+  \interlinepenalty=10000
+  \leftskip=0pt 
+  \rightskip=0pt 
+  \parfillskip=0pt 
+  \RaggedRight
+  \itshape
+  \list{}{
+    \leftmargin 1em
+    \rightmargin 1em
+  }
+  \item
+  \relax
+  }
+{\endlist}
+
+\usepackage{tcolorbox}
+\usepackage{enumitem}
+
+% Reconsider when ready
+\keywords{TODO}
+
+%Reconsider when ready
+\begin{CCSXML}
+    <ccs2012>
+    <concept>
+    <concept_id>10003120.10003121.10003129</concept_id>
+    <concept_desc>Human-centered computing~Interactive systems and tools</concept_desc>
+    <concept_significance>500</concept_significance>
+    </concept>
+    </ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Human-centered computing~Interactive systems and tools}
+% \ccsdesc[500]{Human-centered computing~Activity centered design}
+
+\usepackage{pgfplots}

@@ -1,0 +1,165 @@
+\begin{table*}[h]
+\resizebox{0.95\textwidth}{!}{%
+\begin{tabular}{@{}c p{0.45\linewidth} p{0.45\linewidth}@{}}
+\toprule
+  \multicolumn{1}{l}{\textbf{Message}} &
+  \multicolumn{1}{l}{\textbf{Trigger}} & 
+  \multicolumn{1}{l}{\textbf{Action}} 
+  \\ \midrule
+1\label{msg-rules-actions:highestrated} &
+% \begin{tabular}[t]{@{}l@{}}
+% {\sf This property is in the top 1\% of highest-rated }\\
+% {\sf properties available!} \button{propose a contract}.
+% \end{tabular} &
+
+Properties are ordered by rating, and the message is created for the top 1\% of properties.
+&
+
+\button{propose a contract} creates a contract for the property.
+
+\\[3em]
+
+2\label{msg-rules-actions:satisfy_most_preferences} &
+% \begin{tabular}[t]{@{}l@{}}
+% {\sf This property satisfies most of your }\\
+% {\sf preferences!} \button{sign the contract}.
+% \end{tabular} &
+\crestBot ranks each property based on how many user preferences it meets. Properties earn one point for each preference that they satisfy. To do this, the tool checks the property price (or rating, etc.) against user preferences. It also checks for relevant house tags and location proximity. A message is generated for properties that satisfy the most preferences.
+
+&
+
+\button{sign the contract} does not directly sign the contract. Instead, it initiates the user interface to open the contract for the corresponding property, highlighting the sign button to draw the user's attention. After reviewing all the details of the contract, it is entirely up to the user to decide whether to sign it or not. 
+
+\\[3em]
+
+3\label{msg-rules-actions:most_active} &
+% \begin{tabular}[t]{@{}l@{}}
+% {\sf You are your team's most active team member!}\\
+% {\sf Why don't you ask \textit{leastActiveUser} what} \\
+% {\sf they want?} \button{post a message}.
+% \end{tabular} &
+
+Periodically, or in response to a burst of activities, \crestBot generates a message for the most active user. A user is considered to be the most active user if their activity level exceeds the average activity of all other users by at least 20\%. If there are not enough activities to make this determination, no message will be generated. 
+
+&
+
+\button{post a message} automatically writes a message in the chat asking the least active user what they want. The message is written in the following format: "Hey \textit{leastActiveUser}, tell us a bit more what you would like!"
+
+\\[3em]
+
+
+4\label{msg-rules-actions:least_active} &
+% \begin{tabular}[t]{@{}l@{}}
+% {\sf You are your team's least active team member!}\\
+% {\sf Why don't you share what you would like} \\
+% {\sf with the group?} \button{post a message}.
+% \end{tabular} &
+
+The rule is similar to the previous rule, but in this case \crestBot checks if the user has at least 20\% less activity than the average activity of all the other users.
+&
+
+\button{post a message} automatically generates a message in the chat directed towards the least active user, inquiring about their specific needs or preferences. 
+
+\\[3em]
+
+
+5\label{msg-rules-actions:most_contrib} &
+% \begin{tabular}[t]{@{}l@{}}
+% {\sf You are contributing so much  \$\$ to your team; }\\
+% {\sf get your fair do's: }\\
+% \button{create a house rule} {\sf e.g \textit{"I get the ensuite"}}
+% \end{tabular} &
+
+Whenever a user modifies the monetary contribution of a contract, \crestBot automatically assesses which user contributes the most to the contract and generates a message specifically for that user. An example of this is a house rule where the user who contributes the most to the contract is entitled to receive the king bed.
+
+&
+
+\button{create a house rule} automatically generates a house rule for the user, utilizing a variety of house rule templates from which \crestBot randomly selects.
+
+\\[3em]
+
+6\label{msg-rules-actions:least_contrib} &
+% \begin{tabular}[t]{@{}l@{}}
+% {\sf It is ok if you are paying the least, }\\
+% {\sf but you can }\button{create house rule} \\
+% {\sf of something else you can offer to} \\
+% {\sf sweeten the deal}
+% \end{tabular} &
+
+Similarly to the previous message, \crestBot examines which user contributes the least to the contract and generates a message specifically for that user.
+
+&
+
+\button{create house rule} automatically generates a house rule based on the user's preferences, using a similar process as described in the previous message..
+
+\\[3em]
+
+7\label{msg-rules-actions:not_enough_contrib} &
+% \begin{tabular}[t]{@{}l@{}}
+% {\sf Not enough contributions to pay for this} \\
+% {property:} \button{reallocate contributions}
+% \end{tabular} &
+
+Whenever a user modifies the monetary contribution of a contract, \crestBot automatically evaluates whether the total contribution is adequate to cover the cost of the property. In cases where the total contribution falls short, \crestBot generates a message targeted towards the user, requesting them to take necessary action.
+
+&
+
+\button{reallocate contributions} automatically redistributes the contributions among the users in the group to ensure that the total contribution is sufficient to cover the cost of the property. This redistribution is performed while maintaining the current contribution ratio of each user, ensuring that each user's relative financial commitment to the contract remains the same.
+
+\\[3em]
+
+8\label{msg-rules-actions:pref_not_satisfied_house_rule} &
+% \begin{tabular}[t]{@{}l@{}}
+% {\sf This contract doesn't satisfy your preference}\\
+% {\sf for sound-proofing. Properties that do are 80\%}\\
+% {\sf more expensive} \button{create a house rule} to\\
+% {\sf negotiate a workaround or} \button{sign the contract}.
+% \end{tabular} &
+
+If the property associated with the contract fails to satisfy the user's preferences, \crestBot generates a message for the user.
+
+&
+
+The \button{create a house rule} automatically generates a house rule for the user, randomly selecting from several house rule templates. Alternatively, the \button{sign the contract} highlights the sign the contract button.
+
+\\[3em]
+
+9\label{msg-rules-actions:pref_not_satisfied_alternatives} &
+% \begin{tabular}[t]{@{}l@{}}
+% {\sf This contract doesn't satisfy \textit{unsatisfiedUser}'s } \\
+% {\sf preference for a refrigrator. Here is a} \\
+% {\sf similar property that does.} \button{see property} \\
+% \end{tabular} &
+
+If a property associated with a contract fails to meet the user's preferences, \crestBot generates a message to propose the user alternative properties that satisfy the user's preferences. The property identification is embedded in the message so that the action can be performed directly from the message.
+
+&
+
+\button{see property} automatically opens the corresponding property in the \tool user interface. 
+
+\\[3em]
+
+
+10\label{msg-rules-actions:email} &
+% \begin{tabular}[t]{@{}l@{}}
+% {\sf Hello there! This is a reminder that you are }\\
+% {\sf currently part of a group booking endeavor. }\\
+% {\sf Your team activities today: ...} \\
+% {\sf \button{Log into \tool} and find your dream property.}
+% \end{tabular} &
+
+\crestBot sends emails daily to all users to provide updates and reminders about the team's booking endeavor. These emails include a summary of the team's activities, and a link to access the \tool's user interface. 
+
+&
+
+\button{Log into \tool} automatically opens the \tool's user interface in the user's browser as a hyperlink that is open in their browser window.
+
+\\[3em]
+
+  \\ \bottomrule
+\end{tabular}%
+}
+\vspace{0.2cm}
+\caption{Triggers and Actions for each of \cbot's message from Table~\ref{tab:messages}.}
+\label{tab:rules-actions-table}
+\end{table*}

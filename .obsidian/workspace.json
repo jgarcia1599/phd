@@ -1,0 +1,218 @@
+{
+  "main": {
+    "id": "a4a22b67aa363ded",
+    "type": "split",
+    "children": [
+      {
+        "id": "82b720ecf11551be",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "804fdb83fcb83a82",
+            "type": "leaf",
+            "state": {
+              "type": "pdf-annotator",
+              "state": {
+                "file": "literature_notes/2024-03-08_rehearsal.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "57f342e64c500a67",
+    "type": "split",
+    "children": [
+      {
+        "id": "a6bee211fa1d2a0a",
+        "type": "tabs",
+        "dimension": 34.129692832764505,
+        "children": [
+          {
+            "id": "3bbe1315435c46f0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "365fd2a0af8ba933",
+        "type": "tabs",
+        "dimension": 65.8703071672355,
+        "children": [
+          {
+            "id": "172176e455012e1e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "98605d3cba599827",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "9952d0764600f3a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "6c21d62bbd0e7f67",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1fab9ce1a53c73bf",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "literature_notes/2024-03-08_rehearsal.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "24497b7aa2f2d6fa",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "literature_notes/2024-03-08_rehearsal.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "eb18a60f4c0e5ac2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "983cc96329f25c01",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "literature_notes/2024-03-08_rehearsal.md"
+              }
+            }
+          },
+          {
+            "id": "a13b09338c4ef3fc",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "804fdb83fcb83a82",
+  "lastOpenFiles": [
+    "literature/(Third Anniversary Reprint) Philip Guo - The Ph.pdf",
+    "books/algorithms_for_decision_making.pdf",
+    "misc/Junior's Workflow.md",
+    "literature_notes/2024-03-08_rehearsal.md",
+    "literature/Shaikh et al_2024_Rehearsal.pdf",
+    "literature_notes/2024-02-15_llm_deliberation.md",
+    "README.md",
+    "hello.md",
+    "large_files.py",
+    "classes/2024_spring/big_data/Notes.md",
+    "classes/2024_spring/big_data/mapreduce-osdi04.pdf",
+    "classes/2024_spring/big_data/mapreduce-osdi04.pdf.crdownload",
+    "classes/2024_spring/big_data/books/book (1).pdf",
+    "classes/2024_spring/big_data/books/(The Morgan Kaufmann Series in Data Management Systems) Jiawei Han, Jian Pei, Hanghang Tong - Data Mining_ Concepts and Techniques-Morgan Kaufmann (2022).pdf",
+    "literature_notes/2024-03-02_group_dyanamics.md",
+    "misc/hci_resources.md",
+    "classes/2024_spring/db_systems/hw3/hw3.md",
+    "classes/2024_spring/db_systems/hw3/HW3-CS6083-24SP.pdf",
+    "classes/2024_spring/db_systems/hw3",
+    "books/Roger A Mccain - Game Theory_ A Nontechnical Introduction To The Analysis Of Strategy (Team-IRA)-WSPC (2023).pdf",
+    "2024-01-02.md",
+    "projects/llms-mediation/llms-mediation notes.md",
+    "literature_notes/2024-02-15_llm_mediator.md",
+    "literature_notes/2024-01-09_Reems_Capstone_2_paper.md",
+    "classes/2024_spring/db_systems/DB systems.md",
+    "classes/2024_spring/db_systems/hw2/dump.md",
+    "literature_notes/2024-02-27_delidata.md",
+    "literature_notes/2024-02-15_score.md",
+    "literature_notes/2024-02-16_negotiation_arena.md",
+    "literature_notes/Design of User Interfaces.md",
+    "literature_notes/Luxton - 2014 - Artificial intelligence in psychological practice.md",
+    "literature_notes/Untitled.md",
+    "literature_notes/The Banality of Extremism.md",
+    "literature_notes/Persuasive Technology Using Computers to Change What We Think and Do.md",
+    "literature_notes/Measuring the Prevalence of Anti-social behaviour in Online Communities 1.md",
+    "literature_notes/Generative Agents Interactive Simulacra of Human Behavior.md",
+    "Untitled.canvas",
+    "classes/2024_spring/big_data/hw1/top10co-occurrends_hdfs_result.png",
+    "classes/2024_spring/big_data/hw1/Screenshot 2024-02-23 at 3.13.29 PM.png",
+    "classes/2024_spring/big_data/hw1/q1_b.png",
+    "classes/2024_spring/big_data/hw1/Screenshot 2024-02-20 at 5.24.10 PM.png",
+    "classes/2024_spring/info_viz/hw1-student/bonus_result.png",
+    "classes/2024_spring/info_viz/hw1-student/part_b_result.png",
+    "classes/2024_spring/big_data/hw1/q1_a.png",
+    "classes/2024_spring/big_data/hw1/Screenshot 2024-02-15 at 8.16.20 PM.png",
+    "misc/img/Jupyter Cell Tags.png",
+    "Jupyter Cell Tags.png"
+  ]
+}

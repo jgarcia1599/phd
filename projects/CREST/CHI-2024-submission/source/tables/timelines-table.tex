@@ -1,0 +1,57 @@
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{graphicx}
+\newcolumntype{A}{ >{\centering\arraybackslash} m{1cm} }
+\newcolumntype{B}{ >{\centering\arraybackslash} m{1.8cm} }
+\newcolumntype{C}{ >{\centering\arraybackslash} m{3.5cm} }
+\newcolumntype{D}{ m{9.5cm} }
+\begin{figure*}[]
+{\sf
+\resizebox{\textwidth}{!}{%
+\begin{tabular}[t]{ADBBC}
+\toprule
+\textbf{} & \textbf{Timeline} & \textbf{Agreement?} & \textbf{Duration} &
+\begin{tabular}[b]{@{}l@{}}\textbf{Bookmarks or Contracts}\end{tabular} 
+\\ \midrule
+\multicolumn{4}{l}{\textit{\tool}}  \\
+\midrule
+C1 & \includegraphics[width=0.52\textwidth]{images/timelines/C1.pdf}  & yes & 6 hr & 2
+\\
+C2 & \includegraphics[width=0.52\textwidth]{images/timelines/C2.pdf}  & yes & 17 hr & 12
+\\
+C3 & \includegraphics[width=0.52\textwidth]{images/timelines/C3.pdf}  & yes & 89 hr & 8
+\\
+C4 & \includegraphics[width=0.52\textwidth]{images/timelines/C4.pdf}  & yes & 28 hr & 6
+\\
+C5 & \includegraphics[width=0.52\textwidth]{images/timelines/C5.pdf}  & yes & 130 hr & 5
+\\
+C6 & \includegraphics[width=0.52\textwidth]{images/timelines/C6.pdf}  & yes & 52 hr & 6
+\\
+C7 & \includegraphics[width=0.52\textwidth]{images/timelines/C7.pdf}  & yes & 59 hr & 6
+\\
+\midrule
+\multicolumn{4}{l}{{Baseline}}      \\
+\midrule
+B1 & \includegraphics[width=0.52\textwidth]{images/timelines/B1.pdf}  & no & 2 hr & 3
+\\
+B2 & \includegraphics[width=0.52\textwidth]{images/timelines/B2.pdf}  & yes & 25 hr & 7
+\\
+B3 & \includegraphics[width=0.52\textwidth]{images/timelines/B3.pdf}  & yes & 121 hr & 11
+\\
+B4 & \includegraphics[width=0.52\textwidth]{images/timelines/B4.pdf}  & yes & 133 hr & 8
+\\
+B5 & \includegraphics[width=0.52\textwidth]{images/timelines/B5.pdf}  & yes & 7 hr & 4
+\\
+B6 & \includegraphics[width=0.52\textwidth]{images/timelines/B6.pdf}  & yes & 21 hr & 7
+\\
+B7 & \includegraphics[width=0.52\textwidth]{images/timelines/B7.pdf}  & no & 73 hr & 7
+\\ \bottomrule
+\\
+\multicolumn{5}{c}{
+\includegraphics[height=5pt]{images/timelines/legend-search.pdf} Search \hspace{0.5cm} \includegraphics[height=5pt]{images/timelines/legend-discuss.pdf} Discuss \hspace{0.5cm} \includegraphics[height=5pt]{images/timelines/legend-agree.pdf} Agree}
+\end{tabular}%
+}}
+\label{fig:teams_timelines}
+\end{figure*}
+
