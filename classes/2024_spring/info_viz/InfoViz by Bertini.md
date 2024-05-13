@@ -15,3 +15,21 @@ explanatory
 exploratory
 confirmatory
 
+
+good data viz examples
+
+  https://gka.me/
+  https://ncase.me/
+  https://polygraph.cool/
+  https://www.propublica.org/
+
+
+Tools for eda:
+- tableau
+- r , pyhton
+
+
+anscombe quartet: aggregate statistics are misleading
+
+https://www.dear-data.com/theproject
+

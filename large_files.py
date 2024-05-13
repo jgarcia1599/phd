@@ -16,7 +16,7 @@ def find_large_files(directory, size_limit=100*1024*1024):  # size_limit in byte
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Find large files in a directory.')
-    parser.add_argument('directory', type=str, help='The directory to search in.')
+    parser.add_argument('--directory', type=str, help='The directory to search in.')
     args = parser.parse_args()
 
     find_large_files(args.directory)

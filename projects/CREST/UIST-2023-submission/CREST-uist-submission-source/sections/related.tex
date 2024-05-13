@@ -1,0 +1,40 @@
+\section{ Related Works}
+\input{tables/literature_comparison}
+
+\tool draws inspiration from the areas of real estate search, collaborative search, and conflict mediation and resolution. 
+
+We review the prior work in these areas, which helped shape the design of \tool. 
+
+\paragraph{Single-User Real Estate Search}
+
+Prior works examine how to enable more sophisticated search criteria. For example, \citeauthor{lookupia} enables users to find properties optimally located with respect to a set of landmarks or geospatial points of interest~\cite{lookupia}; \citeauthor{floornet} use a neural network to find properties with floor plans similar to a given one~\cite{floornet}.  
+
+Supporting sophisticated search criteria is complementary to our work, and with appropriate engineering, these search filters can be integrated into \tool.
+We note that commercial booking tools like Airbnb~\cite{airbnb} and Booking.com~\cite{booking} do recognize that real estate search can be a collaborative process: they all filter properties by the number of occupants they can house. However, they provide little support beyond this search filter.
+
+
+\paragraph{Collaborative Search}
+\citeauthor{searchtogether} have codified the design principles --- awareness, division of labor and persistence --- for collaborative search tools in their seminal SearchTogether~\cite{searchtogether} tool. \tool's design principles, especially those concerning the collaborative search aspects of group booking, are heavily influenced by this work.
+
+Many collaborative search tools build on SearchTogether:
+ResultsSpace, for example, provides a shared query history, document-level ratings, and collaborative filter controls~\cite{resultsspace}. Using this tool,  \citeauthor{resultsspace} found that test users oscillate between three high-level strategies when doing a collaborative search: independent, parallel, and divergent. They found that users spend the most time in the independent state than in the two collaborative states (parallel and divergent), which indicates the importance of independent search in collaborative search sessions~\cite{resultsspace}. \citeauthor{algorithmiccollaborativesearch} contend that user-interface-only solutions like SearchTogether still require too much attention to other people's results and decided to mediate collaboration in a back-end layer of their system they call the "Algorithmic Layer"~\cite{algorithmiccollaborativesearch}. 
+To better understand the lack of widespread adoption of collaborative search technologies, \citeauthor{collaborativesearchrevisted}, a co-author of SearchTogether, conducted a survey of 167 Americans. 
+In this study, \citeauthor{collaborativesearchrevisted} found out that 65.3\% of survey participants did engage in a collaborative search task and that over 54\% of the participants appropriated different technologies for the collaboration (i.e. messaging apps, shared lists) in addition to a traditional (non-collaborative) search engine~\cite{collaborativesearchrevisted}. 
+Thus, \citeauthor{slacksearch} decided to cast aside the dedicated collaborative search platform altogether and instead incorporate a search bot in Slack \cite{slacksearch}. They argue that one of the reasons why dedicated collaborative search tools  (like Search Together or ResultSpace) have not garnered widespread adoption is that while users tend to engage in search activities in collaboration, they do so using \textit{non-integrated} tools like stand-alone information retrieval engines and messaging apps. This phenomenon is recognized in systems like SearchMessenger, a messenger application that embeds search results in their application as innovative cards to address disconnected tooling \cite{searchcard}. In \tool, we recognize the importance of supporting collaborative search in the larger context of agreeing on and booking a property. Hence, we create a single tool that connects search, discussion and agreement in a goal-centered flow.
+
+
+\paragraph{Conflict Mediation and Resolution}
+
+Prior work has explored various methods to help resolve group conflicts and disputes.
+
+For instance, Meeting Mediator is a mobile application that visualizes sociometric interactions in a group to promote collaboration \cite{meetingmediator}. Users wear a special badge that collects data on their tone of voice and frequency of speaking, proximity to other users, etc. With this tool, \citeauthor{meetingmediator} attempt to address the most common collaboration challenges management science has identified: social loafing (individuals making less effort in groups), production blocking (over-participators monopolizing the floor), and incomplete information exchange~\cite{meetingmediator}. 
+
+Chatbots have also been used to tackle conflicts in co-living situations. ShareOneWiki is a chatbot that facilitates information sharing and social connection within a co-living space through a wizard-of-oz approach. The chatbot is designed to match questions asked by one resident with an answer provided by a previous resident to the same question in the past, following a human-inspired question-and-answer design style~\cite{shareonewiki}. The bot proved helpful in encouraging light social connections between residents.
+
+Furthermore, it proved the viability of an automated bot in nourishing social connections while providing concrete information on the task at hand, which motivates the use of \cbot in our tool. At the moment, \cbot has no conversational abilities: It only presents messages and notifications to users when and where applicable. An area of future research is to enable \cbot to converse with the users.  
+
+Beyond collaborative search tools and conflict-resolution technologies, we draw inspiration from legal mediation. People who must settle non-trivial legal disputes can do so through mediation, arbitration, or litigation. While in arbitration and litigation, participants are obliged to abide by the terms set by the arbitrator or judge, mediation is where the participants have the most control over the outcome. The neutral mediator helps the conflicting parties find common ground~\cite{disputeresolutionexplanation1}. Due to its more private setting and less stringent procedure, people participating in mediation are likelier to maintain a healthy relationship after the dispute~\cite{disputeresolutionexplanation2}. In addition, tools that algorithmically indicate resolutions for users have proven detrimental to user satisfaction despite their innovative approaches, as proven by a preference for discussion-based solutions~\cite{algorithmicmediation} over the algorithmic ones provided by Spliddit~\cite{spliddit}. 
+
+We summarise the tools surveyed in our literature review in Table \ref{tab:lit-comparison}. 
+
+We acknowledge the merits of these tools as they inspire the features present in \tool. Although all of these tools have made impressive strides in their respective categories, \tool is unique in that it jointly tackles collaborative search, discussion, agreement, and conflict mediation in one system.  

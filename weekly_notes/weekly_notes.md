@@ -1,4 +1,77 @@
 
+
+Monday May 13
+
+crest cscw submission
+
+Abstract
+
+  
+
+Intro 
+
+  
+
+Related Work
+
+  
+
+Overview
+
+  
+
+Evaluation
+
+  
+
+Future Work 
+
+  
+
+Conclusion
+
+
+
+Wednesday March 26
+
+Counter-productive option consideration
+Mindless searching
+Expansiveness over acutness
+
+The Paradox of Choice: Less is More Search tools aim to maximize recall by finding all relevant records for given search criteria. In many collaborative search scenarios, high recall is the desired feature. For example, a group of researchers conducting a systematic review on a subject is interested in collating all relevant research papers. This contrasts with the goal of collaborative search in our setting, which is to find one property that everyone agrees on. Consider the couple interviewed in Section 3.1; their discussions would circle back to the same choices, and any additional property searches they conducted proved futile: they gave the illusion of productive discussion while in reality, they just distracted the users. Furthermore, meaninglessly expanding the list of choices creates fertile ground for possible decision-manipulation scenarios where a single user, usually the one who emerges as a leader or an over-participator, forcibly chooses a property for the team through overtalk and gaslighting, stripping the other team members of their autonomy and decision-making agency.
+
+
+
+
+Shifting Goal Posts Search tools, in general, aim to maximize recall: finding all relevant records for given search criteria. In many collaborative search scenarios, high recall is the desired feature. For example, a group of researchers conducting a systematic review on a subject are interested in collating all relevant research papers. A high-recall collaborative search task is inherently expansive. This contrasts with the goal of collaborative search in our setting, which is to find one property that everyone agrees to. While generating a list of viable options for a group to examine and choose from is desirable, continuing the search even after the group members have largely settled on one or two options is counter-productive. For instance, in the interview with the couple (Section 3.1), we noted that even after narrowing down to a few preferred properties, they still conducted additional individual searches. However, this additional searching proved futile as their discussions would circle back to the same original options they had initially selected. More choices to consider can overwhelm some users, and individually exploring each one might be detrimental to the team’s shared goal. A group member may stall the agreement process by constantly expanding the search list (i.e., production-blocking by an over-participator). Current search features such as bookmarks are better suited for list generation than property agreement: It is relatively easy for each group member to bookmark several properties without seriously considering their viability in terms of group fit. Thus, without a clear goal-oriented process that concludes the search, the sense of a never-ending search can fatigue group members."
+
+
+Lack of Autonoomy Non-collaborative booking tools like Airbnb and Booking.com deprive group members of their sense of autonomy in search and decision-making. This is particularly prevalent in consensus-building scenarios, like constructing a collaborative sequence for a travel itinerary or making a group playlist, where all of the group members are responsible for and impacted by the final decision. Ultimately, in single-user systems, the booking has to be finalized by a single user who acts on behalf of the group. Even though this often agreed-upon leader is usually trusted and considers all the group members' desires and constraints, the inability of each member to personally signal their agreement or disagreement to a specific booking can create negative experiences beyond the search and booking process. For example, a member who believes they were over-ruled in a decision might feel alienated from the group and might later refuse to contribute financially or join the others. As such, we aim to safeguard our users by protecting them from possible decision-manipulation scenarios inherent in collaborative tools, enabling them to clearly express their preferences towards a property.
+
+
+
+
+Monday March 25
+
+CREST UIST 2024 submission and CSCW poster submission
+
+UIST 2024
+current word count: 12,513
+
+preilimary interview: 800
+
+
+try to make it under 10000 words just to be safe. 
+
+
+remove words from asbstract 
+
+
+
+
+
+
+
 November 1st: Progress
   
 This week, I started running the scraping scripts (get Google results, get the content of said results, and label the results with ChatGPT) for "hospital Gaza blast." I basically get the top 50 results since October 17 per day (which is when the event happened) all the way to the present day (so when the script runs today, it will get the top 50 results each day from October 17 to November 1st). I spent too much time this weekend trying to get it to work completely autonomously on the HPC, but I was running into some issues getting the whole pipeline to work, so for now, I am running it on my computer (which means I stop collecting data whenever I am not connected to the internet).

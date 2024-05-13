@@ -1,0 +1,201 @@
+
+\begin{table*}[h]
+\resizebox{0.85\textwidth}{!}{%
+\begin{tabular}{@{}clcl@{}}
+\toprule
+  \multicolumn{2}{l}{\textbf{Example Message or Notification}} &
+  \multicolumn{2}{l}{\textbf{Mediator Role}} \\ \midrule
+1\label{msg:highestrated} &
+\begin{tabular}[t]{@{}l@{}}
+{\sf This property is in the top 1\% of highest-rated }\\
+{\sf properties available!} \button{propose a contract}.
+\end{tabular} &
+
+\begin{tabular}[t]{@{}c@{}}
+Resource Expander \\
+Leader
+\end{tabular} &
+
+\begin{tabular}[t]{@{}l@{}}
+Encourages users to propose a contract for a \\
+property that is likely to satisfy the group.
+\end{tabular}
+\\[3em]
+
+2\label{msg:satisfy_most_preferences} &
+\begin{tabular}[t]{@{}l@{}}
+{\sf This property satisfies most of your }\\
+{\sf preferences!} \button{sign the contract}.
+\end{tabular} &
+
+\begin{tabular}[t]{@{}c@{}}
+Leader
+\end{tabular} &
+
+\begin{tabular}[t]{@{}l@{}}
+Moves agreement forward by getting users \\ 
+to recognize the benefits of a contract \\
+under consideration.
+\end{tabular}
+\\[3em]
+
+3\label{msg:most_active} &
+\begin{tabular}[t]{@{}l@{}}
+{\sf You are your team's most active team member!}\\
+{\sf Why don't you ask \textit{leastActiveUser} what} \\
+{\sf they want?} \button{post a message}.
+\end{tabular} &
+
+\begin{tabular}[t]{@{}c@{}}
+Comm. Opener \\
+Legitimizer
+\end{tabular} &
+
+\begin{tabular}[t]{@{}l@{}}
+Encourages more communication and \\
+participation among group members.
+\end{tabular} 
+
+\\[3em]
+
+
+4\label{msg:least_active} &
+\begin{tabular}[t]{@{}l@{}}
+{\sf You are your team's least active team member!}\\
+{\sf Why don't you share what you would like} \\
+{\sf with the group?} \button{post a message}.
+\end{tabular} &
+
+\begin{tabular}[t]{@{}c@{}}
+Comm. Opener
+\end{tabular} &
+
+\begin{tabular}[t]{@{}l@{}}
+Encourages more communication and \\
+participation among group members.
+\end{tabular} 
+\\[3em]
+
+
+5\label{msg:most_contrib} &
+\begin{tabular}[t]{@{}l@{}}
+{\sf You are contributing so much  \$\$ to your team; }\\
+{\sf get your fair do's: }\\
+\button{create a house rule} {\sf e.g \textit{"I get the ensuite"}}
+\end{tabular} &
+
+\begin{tabular}[t]{@{}c@{}}
+Facilitator \\
+Trainer
+\end{tabular} &
+
+\begin{tabular}[t]{@{}l@{}}
+Promotes fair agreements through trading \\ 
+and negotating monetary and non-monetary \\
+contributions.
+\end{tabular} 
+\\[3em]
+
+6\label{msg:least_contrib} &
+\begin{tabular}[t]{@{}l@{}}
+{\sf It is ok if you are paying the least, }\\
+{\sf but you can }\button{create house rule} \\
+{\sf of something else you can offer to} \\
+{\sf sweeten the deal}
+\end{tabular} &
+
+\begin{tabular}[t]{@{}c@{}}
+Facilitator \\
+Trainer
+\end{tabular} &
+
+\begin{tabular}[t]{@{}l@{}}
+Promotes fair agreements through trading \\
+and negotating monetary and non-monetary \\
+contributions.
+\end{tabular} 
+
+\\[4em]
+
+7\label{msg:not_enough_contrib} &
+\begin{tabular}[t]{@{}l@{}}
+{\sf Not enough contributions to pay for this} \\
+{property:} \button{reallocate contributions}
+\end{tabular} &
+
+\begin{tabular}[t]{@{}c@{}}
+Agent of reality
+\end{tabular} &
+
+\begin{tabular}[t]{@{}l@{}}
+Helps users construct implementable \\
+contracts.
+\end{tabular} 
+
+\\[3em]
+
+8\label{msg:pref_not_satisfied_house_rule} &
+\begin{tabular}[t]{@{}l@{}}
+{\sf This contract doesn't satisfy your preference}\\
+{\sf for sound-proofing. Properties that do are 80\%}\\
+{\sf more expensive} \button{create a house rule} to\\
+{\sf negotiate a workaround or} \button{sign the contract}.
+\end{tabular} &
+
+\begin{tabular}[t]{@{}c@{}}
+Agent of Reality \\
+Problem Explorer
+\end{tabular} &
+
+\begin{tabular}[t]{@{}l@{}}
+Challenges users with preferences that are \\
+difficult to satisfy.
+\end{tabular} 
+\\[4em]
+
+9\label{msg:pref_not_satisfied_alternatives} &
+\begin{tabular}[t]{@{}l@{}}
+{\sf This contract doesn't satisfy \textit{unsatisfiedUser}'s } \\
+{\sf preference for a refrigrator. Here is a} \\
+{\sf similar property that does.} \button{see property} \\
+\end{tabular} &
+
+\begin{tabular}[t]{@{}c@{}}
+Legitimizer \\ 
+Problem Explorer \\
+Resource Expander
+\end{tabular} &
+
+\begin{tabular}[t]{@{}l@{}}
+Provides similar alternatives to expand \\
+settlement options
+\end{tabular}
+
+\\[3em]
+
+
+10\label{msg:email}
+&
+\begin{tabular}[t]{@{}l@{}}
+{\sf Hello there! This is a reminder that you are }\\
+{\sf currently part of a group booking endeavor. }\\
+{\sf Your team activities today: ...} \\
+{\sf \button{Log into \tool} and find your dream property.}
+\end{tabular} &
+
+\begin{tabular}[t]{@{}c@{}}
+Leader
+\end{tabular} &
+
+\begin{tabular}[t]{@{}l@{}}
+This daily email reminder encourages \\
+users to stay on track.
+\end{tabular}
+\\[3em]
+   \\ \bottomrule
+\end{tabular}%
+}
+\vspace{0.2cm}
+\caption{A sample of \cbot's messages and notifications. Each message has an action button that aims to move the group booking process forward and helps users reach agreements. We associate each message with the mediator role it serves and explain how it satisfies the role.}
+\label{tab:messages}
+\end{table*}

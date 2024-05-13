@@ -111,7 +111,7 @@ FROM Membership where sid = 12345)
 SELECT COUNT(*)
 FROM Membership AS m1 JOIN Membership AS m2 USING (cid,
 semester, year)
-where semester = 'Fall' AND year = 2023 AND m2.sid = s.sid) -- explain this
+where semester = 'Fall' AND year = 2023 AND m2.sid = s.sid) 
 
 
 ```

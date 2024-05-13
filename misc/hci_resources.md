@@ -65,8 +65,7 @@ https://homes.cs.washington.edu/~axz/
 https://taesookim.com/
 
   https://www.rkim.dev/#/
-  
-  
+
 Papers and articles of interest: 
 
 [https://drive.google.com/file/d/1gUsMOlYHDzreB17CYNFxDOu-dWCtBQ4M/view](https://drive.google.com/file/d/1gUsMOlYHDzreB17CYNFxDOu-dWCtBQ4M/view)

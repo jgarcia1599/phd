@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "82b720ecf11551be",
+        "id": "e1b4453e2c2bcd50",
         "type": "tabs",
         "children": [
           {
-            "id": "804fdb83fcb83a82",
+            "id": "fa11ba4392b73af6",
             "type": "leaf",
             "state": {
-              "type": "pdf-annotator",
+              "type": "markdown",
               "state": {
-                "file": "literature_notes/2024-03-08_rehearsal.md"
+                "file": "weekly_notes/weekly_notes.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -29,7 +31,7 @@
       {
         "id": "a6bee211fa1d2a0a",
         "type": "tabs",
-        "dimension": 34.129692832764505,
+        "dimension": 26.66666666666667,
         "children": [
           {
             "id": "3bbe1315435c46f0",
@@ -51,7 +53,7 @@
       {
         "id": "365fd2a0af8ba933",
         "type": "tabs",
-        "dimension": 65.8703071672355,
+        "dimension": 73.33333333333333,
         "children": [
           {
             "id": "172176e455012e1e",
@@ -91,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "literature_notes/2024-03-08_rehearsal.md",
+                "file": "weekly_notes/weekly_notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "literature_notes/2024-03-08_rehearsal.md",
+                "file": "weekly_notes/weekly_notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "literature_notes/2024-03-08_rehearsal.md"
+                "file": "weekly_notes/weekly_notes.md"
               }
             }
           },
@@ -146,13 +148,23 @@
                 "searchQuery": ""
               }
             }
+          },
+          {
+            "id": "fb62b6df12bbcd2a",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "weekly_notes/weekly_notes.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -165,44 +177,46 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "804fdb83fcb83a82",
+  "active": "fa11ba4392b73af6",
   "lastOpenFiles": [
-    "literature/(Third Anniversary Reprint) Philip Guo - The Ph.pdf",
-    "books/algorithms_for_decision_making.pdf",
-    "misc/Junior's Workflow.md",
-    "literature_notes/2024-03-08_rehearsal.md",
-    "literature/Shaikh et al_2024_Rehearsal.pdf",
-    "literature_notes/2024-02-15_llm_deliberation.md",
     "README.md",
-    "hello.md",
-    "large_files.py",
-    "classes/2024_spring/big_data/Notes.md",
-    "classes/2024_spring/big_data/mapreduce-osdi04.pdf",
-    "classes/2024_spring/big_data/mapreduce-osdi04.pdf.crdownload",
-    "classes/2024_spring/big_data/books/book (1).pdf",
-    "classes/2024_spring/big_data/books/(The Morgan Kaufmann Series in Data Management Systems) Jiawei Han, Jian Pei, Hanghang Tong - Data Mining_ Concepts and Techniques-Morgan Kaufmann (2022).pdf",
-    "literature_notes/2024-03-02_group_dyanamics.md",
-    "misc/hci_resources.md",
-    "classes/2024_spring/db_systems/hw3/hw3.md",
-    "classes/2024_spring/db_systems/hw3/HW3-CS6083-24SP.pdf",
-    "classes/2024_spring/db_systems/hw3",
-    "books/Roger A Mccain - Game Theory_ A Nontechnical Introduction To The Analysis Of Strategy (Team-IRA)-WSPC (2023).pdf",
-    "2024-01-02.md",
-    "projects/llms-mediation/llms-mediation notes.md",
-    "literature_notes/2024-02-15_llm_mediator.md",
-    "literature_notes/2024-01-09_Reems_Capstone_2_paper.md",
+    "projects/CREST/CHI-2023-submission/chi2023.pdf",
+    "projects/CREST/CHI-2023-submission/reviews.pdf",
+    "weekly_notes/weekly_notes.md",
+    "classes/2024_spring/db_systems/db_hw_1.pdf",
     "classes/2024_spring/db_systems/DB systems.md",
-    "classes/2024_spring/db_systems/hw2/dump.md",
-    "literature_notes/2024-02-27_delidata.md",
+    "literature_notes/2024-03-08_rehearsal.md",
+    "literature_notes/2024-03-25_USENIX_DATAVOIDS_MARCH_2024.md",
+    "books/William Spaniel - Game Theory 101_ The Complete Textbook-CreateSpace Independent Publishing Platform (2011).pdf",
+    "books/Randal E. Bryant, David R. O'Hallaron - Computer Systems_ A Programmer's Perspective-Pearson (2015).pdf",
+    "books/The-Design-of-Everyday-Things-Don-Norman-Chapter 1 & 2.pdf",
+    "books/Roger A Mccain - Game Theory_ A Nontechnical Introduction To The Analysis Of Strategy (Team-IRA)-WSPC (2023).pdf",
+    "books/optimization.pdf",
+    "books/mediation_process.pdf",
+    "books/Kleppmann, Martin - Designing data-intensive applications_ the big ideas behind reliable, scalable, and maintainable systems-O'Reilly Media (2018).pdf",
+    "literature_notes/2024-03-11_mediation_process.md",
+    "literature_notes/A Tour through the Visualization Zoo.md",
     "literature_notes/2024-02-15_score.md",
-    "literature_notes/2024-02-16_negotiation_arena.md",
-    "literature_notes/Design of User Interfaces.md",
-    "literature_notes/Luxton - 2014 - Artificial intelligence in psychological practice.md",
-    "literature_notes/Untitled.md",
-    "literature_notes/The Banality of Extremism.md",
-    "literature_notes/Persuasive Technology Using Computers to Change What We Think and Do.md",
+    "literature_notes/2024-03-02_group_dyanamics.md",
     "literature_notes/Measuring the Prevalence of Anti-social behaviour in Online Communities 1.md",
-    "literature_notes/Generative Agents Interactive Simulacra of Human Behavior.md",
+    "classes/2024_spring/big_data/midterm/q1.png",
+    "classes/2024_spring/big_data/midterm/Screenshot 2024-04-01 at 8.52.04 PM.png",
+    "templates/Annotation and Templater.md",
+    "classes/2024_spring/info_viz/InfoViz by Bertini.md",
+    "classes/2024_spring/info_viz/Notes.md",
+    "misc/hci_resources.md",
+    "misc/project-management.md",
+    "misc/Other Resources I rely on.md",
+    "misc/Junior's Workflow.md",
+    "projects/CREST/UIST-2023-submission/CREST-uist-submission-source/images/ui-collaboratio.jpg",
+    "projects/llms-mediation/llms-mediation notes.md",
+    "classes/2024_spring/db_systems/project_part_1/project_part_1.md",
+    "literature_notes/2024-02-15_llm_deliberation.md",
+    "hello.md",
+    "classes/2024_spring/big_data/Notes.md",
+    "classes/2024_spring/db_systems/hw3/hw3.md",
+    "2024-01-02.md",
+    "literature_notes/2024-02-15_llm_mediator.md",
     "Untitled.canvas",
     "classes/2024_spring/big_data/hw1/top10co-occurrends_hdfs_result.png",
     "classes/2024_spring/big_data/hw1/Screenshot 2024-02-23 at 3.13.29 PM.png",
@@ -210,9 +224,6 @@
     "classes/2024_spring/big_data/hw1/Screenshot 2024-02-20 at 5.24.10 PM.png",
     "classes/2024_spring/info_viz/hw1-student/bonus_result.png",
     "classes/2024_spring/info_viz/hw1-student/part_b_result.png",
-    "classes/2024_spring/big_data/hw1/q1_a.png",
-    "classes/2024_spring/big_data/hw1/Screenshot 2024-02-15 at 8.16.20 PM.png",
-    "misc/img/Jupyter Cell Tags.png",
-    "Jupyter Cell Tags.png"
+    "classes/2024_spring/big_data/hw1/q1_a.png"
   ]
 }
