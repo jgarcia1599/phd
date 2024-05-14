@@ -1,6 +1,65 @@
 
 
+Tuesday May 14
+- prompt engineering: https://www.promptingguide.ai/techniques/consistency
+- Prompt chaining using claude: https://docs.anthropic.com/en/docs/chain-prompts
+
+Prompt techniques to try: 
+- chain of thought
+- retrieval augmented generation: https://arxiv.org/pdf/2312.10997
+	- https://www.youtube.com/watch?v=ODomovYfI6I
+	- it relies on retrieving a subset of the text that is similar to the query (via word embeddings) and then answers the query based on that subtext
+	- In our context, we want a summary of the entire post, and this technique does not work well when asking general overarching questions about the entire corpus. Maybe using something like graph rag.  
+- React https://www.promptingguide.ai/techniques/react
+
+Courses: https://www.coursera.org/specializations/prompt-engineering
+https://www.coursera.org/learn/generative-ai-with-llms
+
+
+
+
+Try different llms with just the post , not the comments
+https://arxiv.org/abs/2404.16130
+
+
+use an llm to generate more focused queries based on the post, use rag to answer those queries based on the corpus, and then based on those answers provide the summary. Maybe, the original intended questions to answer based on the corpus can be preset
+
+
+
+https://www.promptingguide.ai/techniques/react
+
+
+
+
+
+CREST-LLM-ification: 
+
+use rag to match a specific conflict to a mediator role and then use the literature to solve it. 
+
+meeting with ray
+
+role playing a mediation session a la generative agents
+
+individual session by ai , then human session? vice versa? prepare the parties before the mediation session? simulation type tool
+
+online dispute resolution, more transactional, ebay 
+
+
+
+
 Monday May 13
+
+Hello Professor, 
+
+In case we don't meet tomorrow (I don't see a calendar invite on my calendar), here are some quick updates from my end:
+
+- Phd, classes, logistics: I finished my classes yesterday! Still waiting on results, but I am excited to focus more on research this summer. I will be taking a summer class which meets once a week (Java programming) to counteract any possible credits issues later, but I dont foresee it taking much of my time.  I will be spending some time working remotely from Honduras as we discussed before heading back to the UAE. Nirvana got back to me and they booked me a flight back to the UAE. I will be in AD August 12 at night.
+- Interviews: I posted on the group chat with Tesh an update on the last interview I had and I will be having one tomorrow. I willl have to look for more interviewees tomorrow as tomorrow's is my last scheduled one so I will maybe try Prolific for recruiting more mediators. 
+- CREST CSCW 2024: We talked about submitting a poster to CSCW so I went ahead and shared an overleaf with you. The deadline is May 23. I did a lot of trimming/quick edits already but I can focus the next two days on doing a more formal rewrite and ping you once I feel it is ready for you to review. 
+- Reddit/ agent work : I feel as though we haven't talked about this as much due to the interviews, but I did some progress on the technicals of this due to my final class project submissions and can explain where I am with it so far to get feedback from you. In short: A reddit post can be huge with many threaded comments, even when considering that agent frameworks like langchain which allow you to provide large contexts with a prompt. As such, the agent analysis of the Reddit post I get is still too general. 
+
+
+
 
 crest cscw submission
 
